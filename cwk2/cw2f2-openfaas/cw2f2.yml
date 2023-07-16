@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://172.187.169.185:8080
+functions:
+  cw2f2:
+    lang: python3-debian
+    handler: ./cw2f2
+    image: cw2f2:latest
+
